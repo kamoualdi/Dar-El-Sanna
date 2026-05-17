@@ -88,6 +88,9 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${inter.variable} ${playfair.variable}`}>
       <head>
+        {/* Netlify Identity Integration (requis pour intercepter les invitations et jetons de mot de passe) */}
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async></script>
+
         {/* Script Plausible Analytics (Compteur de visiteurs respectueux de la vie privée, sans cookies) */}
         <script defer data-domain="darelsanna.ma" src="https://plausible.io/js/script.js"></script>
         

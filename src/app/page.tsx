@@ -97,7 +97,7 @@ export default function Home() {
             {/* Antiquités Rares */}
             <Link href="/collections?category=antiquites" className={`${styles.gridItem} ${styles.item4}`}>
               <Image 
-                src="https://images.unsplash.com/photo-1584282470766-3d719e5d421d?auto=format&fit=crop&q=80&w=1200" 
+                src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&q=80&w=1200" 
                 alt="Antiquités Rares et pièces de collection marocaines" 
                 fill
                 style={{ objectFit: 'cover' }}

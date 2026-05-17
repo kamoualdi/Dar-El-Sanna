@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import styles from './Footer.module.css';
 import { useState } from 'react';
+import VisitorCounter from './VisitorCounter';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -97,7 +98,7 @@ export default function Footer() {
 
       <div className={`container ${styles.bottom}`}>
         <p>&copy; {new Date().getFullYear()} Dar El Sanna. Tous droits réservés. — <Link href="/cgu" className={styles.link}>CGU & CGV (Droit Marocain)</Link></p>
-        <p>Conçu avec passion pour l'artisanat marocain.</p>
+        <p><VisitorCounter /> — Conçu avec passion pour l'artisanat marocain.</p>
       </div>
     </footer>
   );

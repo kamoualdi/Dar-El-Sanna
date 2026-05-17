@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { products, Product } from '../../../../data/products';
 import styles from './product.module.css';
+import ProductSelector from '../../../../components/ProductSelector';
 
 interface PageProps {
   params: Promise<{
@@ -55,7 +56,6 @@ export default async function ProductDetailPage({ params }: PageProps) {
   }
 
   const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '212600000000';
-  const message = `Bonjour Dar El Sanna, je souhaite acquérir la création d'exception "${product.name}" (${product.brand}) au prix de ${product.price.toLocaleString('fr-MA')} MAD.`;
 
   return (
     <div className={styles.detailsPage}>
@@ -100,33 +100,13 @@ export default async function ProductDetailPage({ params }: PageProps) {
               {product.brand} • {product.artisanOrigin || "Atelier Dar El Sanna"}
             </span>
             <h1 className={styles.productName}>{product.name}</h1>
-            <p className={styles.productPrice}>{product.price.toLocaleString('fr-MA')} MAD</p>
+
+            {/* Interactive Selector with pricing rules & real-time WhatsApp integration */}
+            <ProductSelector product={product} whatsappNumber={whatsappNumber} />
 
             <div className={styles.descriptionBlock}>
               <h3 className={styles.blockTitle}>L'Histoire de la Création</h3>
               <p className={styles.descriptionText}>{product.description}</p>
-            </div>
-
-            {/* CTAs (Interactions exclusives via WhatsApp) */}
-            <div className={styles.actionBlock}>
-              <a 
-                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.primaryCta}
-              >
-                Acquérir cette création via WhatsApp
-              </a>
-              <a 
-                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-                  `Bonjour Dar El Sanna, je souhaite contacter votre Conciergerie Royale pour demander une personnalisation ou obtenir des détails sur la création "${product.name}" (${product.brand}).`
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.secondaryCta}
-              >
-                Demander une personnalisation (WhatsApp)
-              </a>
             </div>
 
             {/* Dynamic Specifications Area */}

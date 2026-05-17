@@ -12,10 +12,10 @@ export default function AdminLogin() {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     // Simulate authentication
-    if (password === 'admin2026') {
+    if (password === '@Settat123456') {
       router.push('/admin/dashboard');
     } else {
-      setError('Mot de passe incorrect. (Indice: admin2026)');
+      setError('Mot de passe incorrect. (Indice: @Settat123456)');
     }
   };
 

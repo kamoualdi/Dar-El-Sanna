@@ -1,0 +1,55 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: "catalog"
+    label: "Catalogue des Créations"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - file: "src/data/products.json"
+        name: "products"
+        label: "Toutes les Œuvres"
+        fields:
+          - name: "products"
+            label: "Liste des Œuvres"
+            widget: "list"
+            summary: "{{fields.name}} ({{fields.price}} MAD) - {{fields.category}}"
+            fields:
+              - { label: "ID unique (slug, ex: soir-marrakech)", name: "id", widget: "string" }
+              - { label: "Nom de l'œuvre", name: "name", widget: "string" }
+              - { label: "Maison / Artisan (Marque)", name: "brand", widget: "string" }
+              - { label: "Prix de base (MAD)", name: "price", widget: "number" }
+              - { label: "Catégorie", name: "category", widget: "select", options: ["parfumerie", "bijouterie", "horlogerie", "antiquites"] }
+              - { label: "Sous-catégorie / Genre", name: "subcategory", widget: "select", options: ["homme", "femme", "unisex", "argent", "cuivre", "inspiration", "epoque"] }
+              - { label: "Image (URL ou Upload)", name: "image", widget: "image" }
+              - { label: "Badge Exclusivité", name: "badge", widget: "select", options: ["", "Tendance 2026", "Exclusivité Maroc", "Pièce Unique", "Édition Limitée", "Édition Privée"], required: false }
+              - { label: "Matière Principale", name: "material", widget: "string" }
+              - { label: "Origine / Atelier", name: "artisanOrigin", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text" }
+              - name: "specs"
+                label: "Spécifications"
+                widget: "object"
+                fields:
+                  - { label: "Volume (Parfumerie, ex: 100 ml)", name: "volume", widget: "string", required: false }
+                  - { label: "Concentration (Parfumerie, ex: Eau de Parfum)", name: "concentration", widget: "string", required: false }
+                  - { label: "Notes de tête (Parfumerie, séparées par virgules)", name: "topNotes", widget: "list", required: false }
+                  - { label: "Notes de cœur (Parfumerie, séparées par virgules)", name: "heartNotes", widget: "list", required: false }
+                  - { label: "Notes de fond (Parfumerie, séparées par virgules)", name: "baseNotes", widget: "list", required: false }
+                  - { label: "Type de métal (Bijouterie, ex: Argent Massif 925)", name: "metalType", widget: "string", required: false }
+                  - { label: "Pierre précieuse (Bijouterie, ex: Turquoise)", name: "stone", widget: "string", required: false }
+                  - { label: "Poids (Bijouterie, ex: 14g)", name: "weight", widget: "string", required: false }
+                  - { label: "Poinçon (Bijouterie, ex: Poinçon d'État)", name: "hallmark", widget: "string", required: false }
+                  - { label: "Nom de l'artisan (Bijouterie/Horlogerie)", name: "artisanName", widget: "string", required: false }
+                  - { label: "Mouvement (Horlogerie, ex: Automatique)", name: "movement", widget: "string", required: false }
+                  - { label: "Réserve de marche (Horlogerie, ex: 42h)", name: "reserve", widget: "string", required: false }
+                  - { label: "Complication (Horlogerie, ex: Phase de lune)", name: "complication", widget: "string", required: false }
+                  - { label: "Boîtier (Horlogerie, ex: Acier 316L)", name: "case", widget: "string", required: false }
+                  - { label: "Diamètre (Horlogerie, ex: 40 mm)", name: "diameter", widget: "string", required: false }
+                  - { label: "Bracelet (Horlogerie, ex: Cuir de crocodile)", name: "strap", widget: "string", required: false }
+                  - { label: "Verre (Horlogerie, ex: Verre saphir)", name: "glass", widget: "string", required: false }

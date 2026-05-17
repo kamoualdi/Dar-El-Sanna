@@ -34,6 +34,8 @@ gérer le stock et générer des liens de vente WhatsApp :
 👉 Mot de passe d'accès : @Settat123456
 👉 LIEN DIRECT DU TABLEAU :
    https://dar-el-sanna.netlify.app/admin/dashboard
+👉 LIEN DIRECT CONCIERGERIE VIP :
+   https://dar-el-sanna.netlify.app/admin/conciergerie
 
 🔥 NOUVELLES FONCTIONNALITÉS INTÉGRÉES :
    - Onglet 💎 "Catalogue Général" avec valeur totale du stock (MAD)

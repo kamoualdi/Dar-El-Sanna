@@ -53,3 +53,16 @@ collections:
                   - { label: "Diamètre (Horlogerie, ex: 40 mm)", name: "diameter", widget: "string", required: false }
                   - { label: "Bracelet (Horlogerie, ex: Cuir de crocodile)", name: "strap", widget: "string", required: false }
                   - { label: "Verre (Horlogerie, ex: Verre saphir)", name: "glass", widget: "string", required: false }
+
+      - file: "src/data/categories.json"
+        name: "categories"
+        label: "Description des Catégories"
+        fields:
+          - name: "categories"
+            label: "Liste des Catégories"
+            widget: "list"
+            summary: "{{fields.label}} ({{fields.id}})"
+            fields:
+              - { label: "Identifiant technique (bijouterie, horlogerie, parfumerie, antiquites)", name: "id", widget: "string" }
+              - { label: "Nom d'affichage", name: "label", widget: "string" }
+              - { label: "Description de la Collection", name: "description", widget: "text" }

@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+      "id": "bijouterie",
+      "label": "Haute Bijouterie",
+      "description": "Découvrez nos créations de haute bijouterie artisanale en argent 925 de Tiznit, cuivre martelé et pierres précieuses. Chaque pièce est ciselée à la main par nos Maâlems."
+    },
+    {
+      "id": "horlogerie",
+      "label": "Haute Horlogerie",
+      "description": "Explorez notre collection de garde-temps d'exception. Montres automatiques d'inspiration horlogère, des complications raffinées au design inspiré du Maroc."
+    },
+    {
+      "id": "parfumerie",
+      "label": "Haute Parfumerie",
+      "description": "Plongez dans l'univers de la haute parfumerie de niche. Eaux de parfum et extraits de parfum signés par les plus grands nez du Maroc et de Grasse."
+    },
+    {
+      "id": "antiquites",
+      "label": "Antiquités Rares",
+      "description": "Pièces de musée authentiques : astrolabes, zelliges, coffres de dot et armurerie berbère. Chaque antiquité est certifiée et accompagnée de son rapport historique."
+    }
+  ]
+}

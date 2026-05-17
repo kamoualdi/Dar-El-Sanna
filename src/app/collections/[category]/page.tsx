@@ -4,19 +4,15 @@ import Link from 'next/link';
 import { products } from '../../../data/products';
 import styles from './category.module.css';
 
-const categoryLabels: Record<string, string> = {
-  bijouterie: 'Haute Bijouterie',
-  horlogerie: 'Haute Horlogerie',
-  parfumerie: 'Haute Parfumerie',
-  antiquites: 'Antiquités Rares',
-};
+import categoriesData from '../../../data/categories.json';
 
-const categoryDescriptions: Record<string, string> = {
-  bijouterie: 'Découvrez nos créations de haute bijouterie artisanale en argent 925 de Tiznit, cuivre martelé et pierres précieuses. Chaque pièce est ciselée à la main par nos Maâlems.',
-  horlogerie: 'Explorez notre collection de garde-temps d\'exception. Montres automatiques d\'inspiration horlogère, des complications raffinées au design inspiré du Maroc.',
-  parfumerie: 'Plongez dans l\'univers de la haute parfumerie de niche. Eaux de parfum et extraits de parfum signés par les plus grands nez du Maroc et de Grasse.',
-  antiquites: 'Pièces de musée authentiques : astrolabes, zelliges, coffres de dot et armurerie berbère. Chaque antiquité est certifiée et accompagnée de son rapport historique.',
-};
+const categoryLabels: Record<string, string> = {};
+const categoryDescriptions: Record<string, string> = {};
+
+categoriesData.categories.forEach(cat => {
+  categoryLabels[cat.id] = cat.label;
+  categoryDescriptions[cat.id] = cat.description;
+});
 
 interface PageProps {
   params: Promise<{ category: string }>;

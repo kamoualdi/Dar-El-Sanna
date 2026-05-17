@@ -3,11 +3,11 @@
                   PLATEFORME E-COMMERCE DE LUXE
 ====================================================================
 
-Voici toutes les adresses et accès importants pour la gestion
-et le suivi de votre boutique d'artisanat marocain de prestige.
+Voici toutes les adresses et accès importants pour la gestion, 
+la vente et le suivi de votre boutique d'artisanat marocain de prestige.
 
 --------------------------------------------------------------------
-1. 🌐 SITE INTERNET PUBLIC
+1. 🌐 SITE INTERNET PUBLIC (Visiteurs & Clients)
 --------------------------------------------------------------------
 L'adresse officielle accessible par vos clients et collectionneurs
 du monde entier (sans barrière d'authentification) :
@@ -16,21 +16,33 @@ du monde entier (sans barrière d'authentification) :
 --------------------------------------------------------------------
 2. 🎨 GESTIONNAIRE DE CATALOGUE VISUEL (Decap CMS)
 --------------------------------------------------------------------
-Le portail d'administration autonome pour modifier vos œuvres,
-ajuster les descriptions, modifier les prix ou téléverser
-de nouvelles images sans connaissances techniques :
-👉 URL : https://dar-el-sanna.netlify.app/admin-cms/index.html
-👉 Accès : Votre adresse e-mail (kamoualdi@gmail.com)
-👉 Mot de passe : Celui que vous avez défini via l'invitation Netlify
+Le portail autonome pour modifier vos œuvres, ajuster les descriptions,
+modifier les prix ou téléverser de nouvelles images :
+👉 ACCÈS DIRECT AU CATALOGUE :
+   https://dar-el-sanna.netlify.app/admin-cms/index.html#/collections/catalog/entries/products
+👉 ACCÈS ACCUEIL CMS :
+   https://dar-el-sanna.netlify.app/admin-cms/index.html
+👉 Identifiant : Votre adresse e-mail (kamoualdi@gmail.com)
+👉 Mot de passe : Celui que vous avez défini lors du reset
 
 --------------------------------------------------------------------
-3. 📊 TABLEAU DE BORD DE STATISTIQUES (Interne)
+3. 💼 CONSOLE D'ADMINISTRATION PROFESSIONNELLE (Interne)
 --------------------------------------------------------------------
-Votre panneau d'administration privé permettant de suivre les 
-visites réelles et d'ajuster le compteur de prestige en temps réel :
-👉 URL : https://dar-el-sanna.netlify.app/admin
+Votre panneau d'administration privé permettant de suivre les finances,
+gérer le stock et générer des liens de vente WhatsApp :
+👉 ACCÈS CONSOLE : https://dar-el-sanna.netlify.app/admin
 👉 Mot de passe d'accès : @Settat123456
-👉 Lien direct du dashboard : https://dar-el-sanna.netlify.app/admin/dashboard
+👉 LIEN DIRECT DU TABLEAU :
+   https://dar-el-sanna.netlify.app/admin/dashboard
+
+🔥 NOUVELLES FONCTIONNALITÉS INTÉGRÉES :
+   - Onglet 💎 "Catalogue Général" avec valeur totale du stock (MAD)
+     et prix moyen de vente calculés en temps réel.
+   - Barre de recherche instantanée et filtres par catégories.
+   - Bouton de redirection CMS direct pour chaque œuvre.
+   - Bouton "Partager" (WhatsApp Concierge) : Copie instantanément
+     un lien WhatsApp pré-rempli pour envoyer la fiche d'une œuvre
+     à un client VIP ou à un assistant pour déléguer la vente !
 
 --------------------------------------------------------------------
 4. ⚙️ CONSOLE NETLIFY (Infrastructure)

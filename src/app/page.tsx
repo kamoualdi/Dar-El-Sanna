@@ -79,7 +79,7 @@ export default function Home() {
             {/* Parfumerie */}
             <Link href="/collections?category=parfumerie" className={`${styles.gridItem} ${styles.item3}`}>
               <Image 
-                src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&q=80&w=1200" 
+                src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&q=80&w=1200" 
                 alt="Flacons et essences exclusives de Haute Parfumerie" 
                 fill
                 style={{ objectFit: 'cover' }}

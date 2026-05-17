@@ -36,9 +36,8 @@ export default function AuthenticatedLayout({
             Catalogue & Œuvres
           </Link>
           <Link 
-            href="#" 
-            className={styles.navLink}
-            onClick={(e) => { e.preventDefault(); alert('Fonctionnalité Messages WhatsApp à venir'); }}
+            href="/admin/conciergerie" 
+            className={`${styles.navLink} ${pathname === '/admin/conciergerie' ? styles.navLinkActive : ''}`}
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-14h.9a8.38 8.38 0 0 1 3.8.9L21 3l-1.9 3.8Z"></path></svg>
             Conciergerie

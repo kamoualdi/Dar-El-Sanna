@@ -1,0 +1,375 @@
+.adminLayout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  color: #1a1a1a;
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background-color: var(--color-primary-text);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.sidebarHeader {
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  font-family: var(--font-playfair);
+  font-size: 1.5rem;
+  color: var(--color-accent-gold);
+  text-decoration: none;
+}
+
+.nav {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navLink {
+  padding: 0.75rem 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.navLink:hover, .navLinkActive {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--color-accent-gold);
+  border-left: 3px solid var(--color-accent-gold);
+}
+
+.sidebarFooter {
+  margin-top: auto;
+  padding: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logoutBtn {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.logoutBtn:hover {
+  color: #ef4444;
+}
+
+/* Main Content Area */
+.mainContent {
+  flex: 1;
+  margin-left: 260px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  height: 70px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-accent-gold);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-family: var(--font-playfair);
+}
+
+.pageContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Login Page Specifics */
+.loginContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-text);
+}
+
+.loginBox {
+  background: white;
+  padding: 3rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.loginLogo {
+  font-family: var(--font-playfair);
+  font-size: 2rem;
+  color: var(--color-primary-text);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.loginSubtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: var(--color-accent-gold);
+}
+
+.primaryBtn {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: var(--color-primary-text);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.primaryBtn:hover {
+  background-color: #333;
+}
+
+/* Dashboard Metrics */
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.metricCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+
+.metricTitle {
+  font-size: 0.85rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.metricValue {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary-text);
+}
+
+/* Tables */
+.tableContainer {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.tableTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.addBtn {
+  background-color: var(--color-accent-gold);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.addBtn:hover {
+  opacity: 0.9;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #666;
+  font-weight: 600;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #eaeaea;
+  vertical-align: middle;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.productImageCell {
+  width: 50px;
+}
+
+.productImageSmall {
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.actionLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.editLink {
+  color: var(--color-accent-gold);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.deleteLink {
+  color: #ef4444;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+/* Page Header */
+.pageHeader {
+  margin-bottom: 2rem;
+}
+
+.pageTitle {
+  font-family: var(--font-playfair);
+  font-size: 2rem;
+  color: var(--color-primary-text);
+}
+
+/* Forms */
+.formGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.formSection {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 2rem;
+}
+
+.formSectionTitle {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+@media (max-width: 992px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}

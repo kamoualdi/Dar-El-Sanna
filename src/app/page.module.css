@@ -1,0 +1,314 @@
+/* Hero Section */
+.hero {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--color-primary-text);
+  color: var(--color-primary-bg);
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: var(--color-accent-gold);
+  color: var(--color-primary-text);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  color: var(--color-primary-text);
+}
+
+/* Manifesto Section */
+.manifesto {
+  padding: 8rem 0;
+  text-align: center;
+  background-color: var(--color-primary-bg);
+}
+
+.manifestoText {
+  font-family: var(--font-playfair);
+  font-size: 2.5rem;
+  line-height: 1.4;
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--color-primary-text);
+}
+
+.manifestoHighlight {
+  color: var(--color-accent-gold);
+  font-style: italic;
+}
+
+/* Collections Grid */
+.collections {
+  padding: 4rem 0 8rem;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+}
+
+.gridItem {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.item1 { 
+  grid-column: span 8; 
+  aspect-ratio: 16 / 10;
+}
+.item2 { 
+  grid-column: span 4; 
+  aspect-ratio: 4 / 5;
+}
+.item3 { 
+  grid-column: span 6; 
+  aspect-ratio: 4 / 3;
+}
+.item4 {
+  grid-column: span 6;
+  aspect-ratio: 4 / 3;
+}
+
+.itemImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.gridItem:hover .itemImage {
+  transform: scale(1.05);
+}
+
+.itemOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 2rem;
+  background: linear-gradient(to top, rgba(26,26,26,0.8), transparent);
+  color: var(--color-primary-bg);
+}
+
+.itemTitle {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.itemLink {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Artisan Focus */
+.artisan {
+  padding: 8rem 0;
+  background-color: var(--color-primary-text);
+  color: var(--color-primary-bg);
+}
+
+.artisanGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.artisanImageWrapper {
+  position: relative;
+  aspect-ratio: 4 / 5;
+}
+
+.artisanImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artisanLabel {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--color-accent-gold);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.artisanTitle {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.artisanText {
+  font-size: 1.1rem;
+  color: rgba(253, 251, 247, 0.8);
+  margin-bottom: 3rem;
+}
+
+.outlineButton {
+  display: inline-block;
+  padding: 1rem 3rem;
+  border: 1px solid var(--color-accent-gold);
+  color: var(--color-accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.outlineButton:hover {
+  background-color: var(--color-accent-gold);
+  color: var(--color-primary-text);
+}
+
+@media (max-width: 992px) {
+  .heroTitle { font-size: 3rem; }
+  .item1, .item2 { 
+    grid-column: span 12; 
+    aspect-ratio: 16 / 10;
+  }
+  .item3 {
+    aspect-ratio: 16 / 10;
+  }
+  .artisanGrid { grid-template-columns: 1fr; gap: 3rem; }
+  .artisanImageWrapper { 
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+  
+  .heroContent {
+    padding: 0 1.5rem;
+  }
+  
+  .heroTitle {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .ctaButton {
+    padding: 0.9rem 2rem;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  
+  .manifesto {
+    padding: 4rem 0;
+  }
+  
+  .manifestoText {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    line-height: 1.5;
+  }
+  
+  .sectionTitle {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .collections {
+    padding: 2rem 0 4rem;
+  }
+  
+  .itemOverlay {
+    padding: 1.5rem;
+  }
+  
+  .itemTitle {
+    font-size: 1.4rem;
+  }
+  
+  .itemLink {
+    font-size: 0.8rem;
+  }
+  
+  .artisan {
+    padding: 4rem 0;
+  }
+  
+  .artisanTitle {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .artisanText {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+  
+  .outlineButton {
+    padding: 0.9rem 2rem;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+}
+

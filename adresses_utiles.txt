@@ -1,0 +1,45 @@
+====================================================================
+               DAR EL SANNA - Moorish Elegance
+                  PLATEFORME E-COMMERCE DE LUXE
+====================================================================
+
+Voici toutes les adresses et accès importants pour la gestion
+et le suivi de votre boutique d'artisanat marocain de prestige.
+
+--------------------------------------------------------------------
+1. 🌐 SITE INTERNET PUBLIC
+--------------------------------------------------------------------
+L'adresse officielle accessible par vos clients et collectionneurs
+du monde entier (sans barrière d'authentification) :
+👉 URL : https://dar-el-sanna.netlify.app
+
+--------------------------------------------------------------------
+2. 🎨 GESTIONNAIRE DE CATALOGUE VISUEL (Decap CMS)
+--------------------------------------------------------------------
+Le portail d'administration autonome pour modifier vos œuvres,
+ajuster les descriptions, modifier les prix ou téléverser
+de nouvelles images sans connaissances techniques :
+👉 URL : https://dar-el-sanna.netlify.app/admin-cms/index.html
+👉 Accès : Votre adresse e-mail (kamoualdi@gmail.com)
+👉 Mot de passe : Celui que vous avez défini via l'invitation Netlify
+
+--------------------------------------------------------------------
+3. 📊 TABLEAU DE BORD DE STATISTIQUES (Interne)
+--------------------------------------------------------------------
+Votre panneau d'administration privé permettant de suivre les 
+visites réelles et d'ajuster le compteur de prestige en temps réel :
+👉 URL : https://dar-el-sanna.netlify.app/admin
+👉 Mot de passe d'accès : @Settat123456
+👉 Lien direct du dashboard : https://dar-el-sanna.netlify.app/admin/dashboard
+
+--------------------------------------------------------------------
+4. ⚙️ CONSOLE NETLIFY (Infrastructure)
+--------------------------------------------------------------------
+Pour gérer les invitations de nouveaux collaborateurs, suivre
+les builds automatiques ou configurer le domaine personnalisé :
+👉 URL : https://app.netlify.com/projects/dar-el-sanna
+👉 Catégorie Identity (Invitations) : https://app.netlify.com/projects/dar-el-sanna/identity
+
+====================================================================
+                     Moorish Elegance © 2026
+====================================================================

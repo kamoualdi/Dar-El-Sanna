@@ -8,10 +8,12 @@ import categoriesData from '../../../data/categories.json';
 
 const categoryLabels: Record<string, string> = {};
 const categoryDescriptions: Record<string, string> = {};
+const categoryImages: Record<string, string> = {};
 
 categoriesData.categories.forEach(cat => {
   categoryLabels[cat.id] = cat.label;
   categoryDescriptions[cat.id] = cat.description;
+  categoryImages[cat.id] = (cat as any).image || '';
 });
 
 interface PageProps {
@@ -59,10 +61,22 @@ export default async function CategoryPage({ params }: PageProps) {
     );
   }
 
+  const categoryImage = categoryImages[category];
+
   return (
     <div className={styles.categoryPage}>
       {/* Hero Banner */}
       <section className={styles.heroBanner}>
+        {categoryImage && (
+          <Image
+            src={categoryImage}
+            alt={label}
+            fill
+            sizes="100vw"
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+        )}
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
           <span className={styles.subtitle}>Dar El Sanna</span>

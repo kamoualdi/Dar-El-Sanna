@@ -65,4 +65,5 @@ collections:
             fields:
               - { label: "Identifiant technique (bijouterie, horlogerie, parfumerie, antiquites)", name: "id", widget: "string" }
               - { label: "Nom d'affichage", name: "label", widget: "string" }
+              - { label: "Image de Couverture (Bannière)", name: "image", widget: "image" }
               - { label: "Description de la Collection", name: "description", widget: "text" }

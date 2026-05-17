@@ -3,21 +3,25 @@
     {
       "id": "bijouterie",
       "label": "Haute Bijouterie",
+      "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1500",
       "description": "Découvrez nos créations de haute bijouterie artisanale en argent 925 de Tiznit, cuivre martelé et pierres précieuses. Chaque pièce est ciselée à la main par nos Maâlems."
     },
     {
       "id": "horlogerie",
       "label": "Haute Horlogerie",
+      "image": "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&q=80&w=1500",
       "description": "Explorez notre collection de garde-temps d'exception. Montres automatiques d'inspiration horlogère, des complications raffinées au design inspiré du Maroc."
     },
     {
       "id": "parfumerie",
       "label": "Haute Parfumerie",
+      "image": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&q=80&w=1500",
       "description": "Plongez dans l'univers de la haute parfumerie de niche. Eaux de parfum et extraits de parfum signés par les plus grands nez du Maroc et de Grasse."
     },
     {
       "id": "antiquites",
       "label": "Antiquités Rares",
+      "image": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&q=80&w=1500",
       "description": "Pièces de musée authentiques : astrolabes, zelliges, coffres de dot et armurerie berbère. Chaque antiquité est certifiée et accompagnée de son rapport historique."
     }
   ]

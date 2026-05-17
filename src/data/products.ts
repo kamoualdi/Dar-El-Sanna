@@ -37,4 +37,4 @@ export interface Product {
   };
 }
 
-export const products: Product[] = productsData as Product[];
+export const products: Product[] = productsData.products as Product[];
